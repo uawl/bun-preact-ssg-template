@@ -1,0 +1,19 @@
+{
+  "name": "bun-preact-ssg-template",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest",
+    "http-server": "^14.1.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "preact": "^10.26.6",
+    "preact-render-to-string": "^6.5.13"
+  },
+  "scripts": {
+    "build": "bun run build.tsx",
+    "dev": "bun run build.tsx && bunx --bun http-server dist"
+  }
+}
